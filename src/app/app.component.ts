@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'HelloWorld';
+  title = 'Hello from this.title(data binding)';
+
+  ngOnInit():void{
+    this.title="hello from ngOnInit";
+  }
 }
