@@ -16,15 +16,23 @@ import { AppComponent } from './app.component';
 //they have additional metadata about the components,services,imports etc..
 //decorators are used while processing,instantiation and at run time
 @NgModule({
+
+  //components are added here
   declarations: [
     AppComponent
   ],
+
+  //import needed for application are added here
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule
   ],
+
+  //typically services like http-services are added to providers
   providers: [],
+
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
